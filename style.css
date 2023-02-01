@@ -1,0 +1,16 @@
+@import './CSS/mobile.css';
+@import './CSS/desktop.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
