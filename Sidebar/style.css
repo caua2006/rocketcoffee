@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #DCE4E3;
+    display: flex;
+    height: 100vh;
+}
+p {
+    display: none;
+    visibility: hidden;
+   
+}
+h1 {
+    margin: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #084236;
+
+}
+
+.sidebar {
+    background: #18C29C;
+    width: 78px;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 13px;
+    transition: .5s;
+    overflow-x: hidden;
+
+    
+}
+.itens {
+    padding-inline: 14px;
+}
+
+.menu {
+    margin-top: 26px;
+
+}
+.sidebar .menu #logo {
+    padding: 0px;
+    background: transparent;
+}
+.menu img:nth-of-type(1){
+    display: none;
+}
+#login {
+    margin-top: 69px;
+    width: 100%;
+    padding: 5px 14px;
+    background: rgba(220, 228, 227, 0.6);
+}
+#login img:nth-of-type(2) {
+    padding: 13px;  
+    border-radius: 12px;
+}
+#login img:hover {
+    background: #DCE4E3;
+        
+    transition: 0.5s;
+}
+#eleanor {
+    display: none;
+    
+}
+.sidebar .itens div img {
+    padding: 11px 13px;
+    border-radius: 12px;
+}
+.sidebar .itens div img:hover {
+    
+    background: #DCE4E3;
+        
+    transition: 0.5s;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+
+/* Menu aberto com o click */
+
+.sidebar.active p {
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    align-items: center;
+    text-transform: capitalize;
+    visibility: visible;
+    color: #084236;
+    /* overflow-x: hidden; */
+}
+.sidebar.active,
+.itens  {
+    width: 250px;
+    height: 100%;
+    align-items: flex-start;
+    transition: .5s;
+    overflow-x: hidden;
+}
+.sidebar.active .itens div {
+    display: flex;
+    width: 100%;
+}
+.sidebar.active .menu {
+    gap: 106px;
+}
+.sidebar.active .menu img:nth-of-type(1){
+    display: flex;
+}
+.sidebar.active .search,
+.sidebar.active .grid,
+.sidebar.active .pets,
+.sidebar.active .user,
+.sidebar.active .vets,
+.sidebar.active .settings {
+    gap: 13px;
+}
+.sidebar.active #eleanor {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+}
+
+.sidebar.active #login {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: 60px;
+    margin-top: 103px;
+    
+}
+.sidebar.active #login section p {
+    width: 100px;
+}
+.sidebar.active #login section p:nth-of-type(2) {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    
+}
+.sidebar.active .menu #logo {
+    padding-left: 13px;
+    background: transparent;
+}
+.sidebar.active .search,
+.sidebar.active .grid,
+.sidebar.active .pets,
+.sidebar.active .user,
+.sidebar.active .vets,
+.sidebar.active .settings,
+#Menu
+ {
+    padding: 11px 13px;
+    border-radius: 12px;
+}
+.sidebar.active .itens div img {
+    padding: 0px;
+    border-radius: 0px;
+}
+.sidebar.active .search:hover,
+.sidebar.active .grid:hover ,
+.sidebar.active .pets:hover ,
+.sidebar.active .user:hover ,
+.sidebar.active .vets:hover ,
+.sidebar.active .settings:hover {
+    
+    background: #DCE4E3;
+        
+    transition: 0.5s;
+}

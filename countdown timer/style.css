@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+      --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+  }
+body {
+    height: 100vh;
+}
+#top-image img,
+#bottom-image img {
+    width: 100%;
+    
+}
+main {
+    display: flex;
+    justify-content: center;
+    gap: 82px;
+
+
+}
+.timer h1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--purple);
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0.105em;
+    
+}
+.timer {
+    margin-bottom: 46px;
+}
+.time-name p {
+    color: var(--text-color);
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+.time {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 108px;
+    color: var(--black);
+}
+.time-name {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 29px;
+    gap: 85px;
+    
+   
+   
+}
+.inscreve{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--text-color);
+    margin-bottom: 31px;
+    
+}
+.countdown button {
+    border-radius: 10px;
+    background: var(--purple);
+    width: 160px;
+    height: 46px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.countdown {
+    text-align: center;
+    /* border: 1px solid red; */
+}

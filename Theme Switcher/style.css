@@ -1,0 +1,86 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background: #F1F1F1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+body.active {
+    background:  #292C35;
+    transition: background 1s;
+}
+button {
+    width: 235.38px;
+    height: 102px;
+    background: #000000;
+    border-radius: 59px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4.5px;
+    gap: 32px;
+    
+}
+.ball {
+    position: absolute;
+    z-index: 1000;
+    background:#F1F1F1;
+    border-radius: 50%;
+    width: 86.31px;
+    height: 86.31px;
+    margin-right: calc(100% - (100.31px));
+    animation: moveBallLeft 1s forwards ;
+
+}
+button.active .ball {
+    animation: moveBallRight 1s forwards;
+}
+button.active #moon {
+    opacity: 1;
+    transition: opacity 3s;
+}
+button.active #sun {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#sun{
+    width: 94.15px;
+    height: 94.15px;
+    transition: 5s;
+}
+
+
+
+
+
+#moon{
+    opacity: 0;
+    width: 94.15px;
+    height: 94.15px;
+
+    
+}
+@keyframes moveBallRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(98.15px + 32px));
+    }
+}
+@keyframes moveBallLeft {
+    0% {
+        transform: translateX(calc(98.15px + 32px));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

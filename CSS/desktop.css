@@ -29,7 +29,8 @@
         justify-content: space-around;
     }
    
-    .menu-mobile  {
+    .menu-mobile,
+    a  {
         color: var(--border-menu-mobile);
         gap: 32px;
         font-family: 'Manrope';
@@ -38,6 +39,7 @@
         font-size: 14px;
         line-height: 19px;
         letter-spacing: 0.02em;
+        
     }
     button {
         margin: 0;
